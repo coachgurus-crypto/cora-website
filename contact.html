@@ -2,7 +2,7 @@
 <html lang="en" data-palette="clay" data-type="modern" data-layout="split">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Contact — Cora</title>
 <meta name="description" content="Get in touch with the Cora team — support, press, privacy and data requests.">
 <link rel="icon" type="image/png" href="assets/icon-180.png">
@@ -28,6 +28,10 @@
   .form-success h3 { font-size: 24px; margin-bottom: 8px; }
   .form-success p { color: var(--ink-soft); }
   @media (max-width: 820px) { .contact-grid { grid-template-columns: 1fr; gap: 40px; } .form-row { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .contact-intro h1 { font-size: clamp(32px, 8vw, 48px); }
+    .form-card .btn { width: 100%; }
+  }
 </style>
 </head>
 <body>

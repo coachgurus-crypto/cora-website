@@ -2,7 +2,7 @@
 <html lang="en" data-palette="clay" data-type="modern" data-layout="split">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>About — Cora</title>
 <meta name="description" content="Why we built Cora: a calmer, more honest way to live with PCOS. Built for your body, not for ads.">
 <link rel="icon" type="image/png" href="assets/icon-180.png">
@@ -28,6 +28,11 @@
   .stat .num { font-family: var(--font-display); font-size: clamp(40px, 5vw, 58px); font-weight: 800; color: var(--primary); letter-spacing: -.03em; line-height: 1; }
   .stat .lbl { color: var(--ink-soft); font-size: 15px; font-weight: 600; margin-top: 10px; }
   @media (max-width: 680px) { .stats-band { grid-template-columns: 1fr; gap: 36px; } }
+  @media (max-width: 640px) {
+    .about-hero { padding: 48px 0 16px; }
+    .about-hero .lead { font-size: 17px; }
+    .story p { font-size: 16px; }
+  }
 
   .principles { max-width: 760px; margin: 0 auto; }
   .principle { display: flex; gap: 18px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid var(--line); }

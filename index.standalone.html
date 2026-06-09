@@ -2,7 +2,7 @@
 <html lang="en" data-palette="clay" data-type="modern" data-layout="split">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Cora — Manage your PCOS, calmly</title>
 <meta name="description" content="Cora is the all-in-one PCOS app: track your cycle and symptoms, move with cycle-aware workouts and walk reminders, eat for steadier energy, and see what actually helps. Private, warm, no ads.">
 <link rel="icon" type="image/png" href="assets/icon-180.png">
@@ -128,6 +128,35 @@
   .final-cta .btn-ghost { color: #fff; border-color: rgba(255,255,255,.5); }
   .final-cta .btn-ghost:hover { background: rgba(255,255,255,.12); }
   .final-cta .fine { color: rgba(255,255,255,.78); font-size: 14px; margin-top: 24px; }
+
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; text-align: center; }
+    .hero-copy { display: flex; flex-direction: column; align-items: center; }
+    .hero .lead { max-width: 560px; }
+    .hero-cta, .hero-trust { justify-content: center; }
+    .hero-visual { min-height: 500px; margin-top: 4px; }
+    .hero-chip-1 { left: max(8px, calc(50% - 210px)); top: 200px; }
+    .hero-chip-2 { right: max(8px, calc(50% - 210px)); bottom: 72px; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 40px 0 56px; }
+    .feat-grid { grid-template-columns: 1fr; }
+    .showcase-row + .showcase-row { margin-top: 64px; }
+    .privacy-band { border-radius: 28px; }
+    .final-cta-inner { padding: 52px 24px; border-radius: 28px; }
+    .hero-visual { min-height: 420px; }
+    .hero-visual .phone { width: min(268px, 76vw); }
+    .hero-chip { font-size: 12.5px; padding: 10px 12px; max-width: calc(50vw - 12px); }
+    .hero-chip .ichip { width: 34px; height: 34px; }
+    .hero-chip-1 { left: 2%; top: auto; bottom: 54%; }
+    .hero-chip-2 { right: 2%; bottom: 6%; }
+    .hero-cta { flex-direction: column; width: 100%; max-width: 320px; }
+    .hero-cta .appstore, .hero-cta .btn { width: 100%; justify-content: center; }
+  }
+  @media (max-width: 400px) {
+    .hero-chip { display: none; }
+    .hero-visual { min-height: 380px; }
+  }
 </style>
 </head>
 <body>

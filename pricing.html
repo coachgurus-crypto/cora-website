@@ -2,7 +2,7 @@
 <html lang="en" data-palette="clay" data-type="modern" data-layout="split">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Pricing — Cora</title>
 <meta name="description" content="Cora Plus: one simple subscription with everything included. $49/year or $19.99/month. Cancel anytime, no dark patterns, no ads.">
 <link rel="icon" type="image/png" href="assets/icon-180.png">
@@ -50,7 +50,10 @@
   .pricing-faq { max-width: 760px; margin: 0 auto; }
   .inc { display: flex; gap: 11px; align-items: flex-start; font-size: 15.5px; font-weight: 600; color: var(--ink); line-height: 1.4; }
   .inc .tick { width: 24px; height: 24px; border-radius: 999px; background: var(--sage-soft); color: var(--sage); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
-  @media (max-width: 620px) { .compare ul { grid-template-columns: 1fr !important; } }
+  @media (max-width: 768px) {
+    .page-head { padding-top: 48px; }
+    .plan .btn { width: 100%; }
+  }
 </style>
 </head>
 <body>
@@ -103,7 +106,7 @@
     <div class="wrap compare">
       <h2>Everything in Cora</h2>
       <p style="text-align:center;color:var(--ink-soft);max-width:520px;margin:14px auto 0">One subscription, no tiers or add-ons. Every feature is included on both Annual and Monthly.</p>
-      <ul style="list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;max-width:760px;margin:36px auto 0;padding:0">
+      <ul class="compare-features">
         <li class="inc"><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7"/></svg></span>Flexible cycle &amp; symptom tracking</li>
         <li class="inc"><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7"/></svg></span>Gentle daily check-ins</li>
         <li class="inc"><span class="tick"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 10 17.5 19 7"/></svg></span>Move: cycle-aware workout plans &amp; guided sessions</li>

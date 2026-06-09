@@ -160,7 +160,8 @@
     '.twk-chip[data-on="1"]{box-shadow:0 0 0 2px #29261b,0 2px 6px rgba(0,0,0,.15)}' +
     '.twk-chip span{position:absolute;inset:0;display:flex}' +
     '.twk-chip span i{flex:1}' +
-    '.twk-chip svg{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:14px;height:14px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}';
+    '.twk-chip svg{position:absolute;top:6px;left:50%;transform:translateX(-50%);width:14px;height:14px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.35))}' +
+    '@media (max-width:640px){.twk-panel{left:12px;right:12px;bottom:12px;width:auto;max-width:none}}';
 
   var PALETTE_SWATCHES = {
     clay:  ['#C75D4F', '#6E8C68', '#F4EBE1'],
